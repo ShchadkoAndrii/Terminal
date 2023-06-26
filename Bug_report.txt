@@ -9,4 +9,4 @@
 9) Severity
 10) Priority
 11) Assigned to
-12) Reporter
+12) Reporter.
