@@ -1,0 +1,71 @@
+1) Посмотреть где я pwd
+2) Создать папку mkdir folder3
+3) Зайти в папку сd folder3
+4) Создать 3 папки mkdir folder1,folder2,folder3 
+5) Зайти в любоую папку cd folder3
+6) Создать 5 файлов (3 txt, 2 json) touch file1.txt,touch file2.txt,touch file3.txt,touch file1.json, touch file2.json
+7) Создать 3 папки mkdir -p {folder1,folder2,folder3} 
+8. Вывести список содержимого папки ls-la, ls -f, ls
+9) + Открыть любой txt файл cat file1.txt,vim file1.txt
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти.
+12) Выйти из папки на уровень выше cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. mv file1.json file2.json folder1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp file1.txt file2.txt folder1
+15) Найти файл по имени find -name file1.txt 
+16) просмотреть содержимое в реальном времени tail -f file1.txt
+17) вывести несколько первых строк из текстового файла head -2 file1.txt
+18) вывести несколько последних строк из текстового файла tail -2 file1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less file1.txt
+20) вывести дату и время date
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+1) Отправить http запрос на сервер.
+curl http://162.55.220.72:5006/terminal-hw-request
+curl "http://162.55.220.72:5005/get_method?name=Andrii&age=30"
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+Вариант1
+
+#!/bin/bash
+cd /c/Users/Acer/git/folder5
+echo "The current directory is:"
+pwd
+echo "Creating a new directory"
+mkdir my_script
+echo "Open new directory"
+cd my_script
+echo "Creating new directories"
+mkdir test_1 test_2 test_3
+echo "Open new directory"
+cd test_1
+echo "Creating new files"
+touch file_1.txt file_2.txt file_3.txt j_file1.json j_file2.json
+echo "Creating new directories"
+mkdir new_1 new_2 new_3
+echo "Show all files in this directory"
+ls -la
+echo "Move files to folder"
+mv file_1.txt file_2.txt new_3
+echo "Success"
+
+Вариант2
+
+1. Создать файл с расширением myscript.sh ---> touch myscript.sh
+2. Открыть его для редактирования ---> nano myscript.sh / vim myscript.sh
+3. Записать туда команды из пунктов 3, 4, 5, 6, 7, 8, 13
+
+cd name_1
+mkdir script_1 script_2 script_3
+cd script_1
+touch file1.txt file2.txt file3.txt file1.json file2.json
+mkdir new_1 new_2 new_3
+ls -la
+mv file1.txt file2.txt new_1
+4. Сохранить файл ctrl+O
