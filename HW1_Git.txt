@@ -442,7 +442,7 @@ Acer@DESKTOP-918AFDR MINGW64 /d/QA_Cours
 $ vim new.txt
 
 Name - Andrii,
-Age - 35,
+Age - 30,
 Pets - 4,
 Salary - $10000.
 
@@ -471,9 +471,16 @@ Acer@DESKTOP-918AFDR MINGW64 /d/QA_Cours/txt (main)
 $ touch preferences.txt
 
  10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+
  
 Acer@DESKTOP-918AFDR MINGW64 /d/QA_Cours/txt (main)
 $ vim preferences.txt
+
+Favorite film: "The Matrix"
+Favorite serial: "Lord of the Rings"
+Favorite food: "Sushi"
+Favorite season: "Summer"
+
 
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
  
