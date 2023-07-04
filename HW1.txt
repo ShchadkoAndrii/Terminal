@@ -69,4 +69,4 @@ mkdir new_1 new_2 new_3
 ls -la
 mv file1.txt file2.txt new_1
 4. Сохранить файл ctrl+O
-5. Выйти из nano ctrl+X / :wq - записать файл и выйти из vim;
+5. Выйти из nano ctrl+X / :wq - записать файл и выйти из vim.
